@@ -1,0 +1,395 @@
+/* base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html  */
+html {
+    scroll-behavior: smooth;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--header-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 25px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e76f51;
+}
+
+/* variables */
+:root {
+    --header-black: #212227;
+    --main-background: #637074;
+    --cool-grey: #8693AB;
+
+}
+
+/* NAVBAR STARTS */
+#navbar {
+    background-color: var(--header-black);
+    position: fixed;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#navbar ul {
+    display: flex;
+
+    list-style: none;
+    padding: 20px 0px 20px 0px;
+    margin-left: 10px;
+}
+
+#navbar ul li a {
+
+
+    text-decoration: none;
+    margin: 50px 0px 50px 0px;
+    padding: 20px 24px 20px 24px;
+    color: whitesmoke;
+    font-family: 'Urbanist', sans-serif;
+
+
+}
+
+#navbar ul li a:hover {
+    background: rgb(0, 0, 15);
+    background: linear-gradient(90deg, rgb(0, 0, 15) 0%, rgba(0, 0, 70, 1) 30%);
+    color: rgba(255, 255, 255, 0.795);
+
+}
+
+/* NAVBAR ENDS */
+
+
+/* HOME STARTS */
+#home {
+    background: rgb(0, 0, 15);
+    background: linear-gradient(90deg, rgba(0, 0, 15, 1) 0%, rgba(0, 0, 50, 1) 90%);
+
+    color: #e76f51;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#home h2 {
+    font-size: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Urbanist', sans-serif;
+}
+
+#home p {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#home a {
+    font-family: 'Urbanist', sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 40px;
+    padding-bottom: 0px;
+    color: white;
+    transition: font-size 0.4s;
+}
+
+#home a:hover {
+    font-size: 40px;
+}
+
+/* HOME ENDS */
+
+
+
+/** SERVICES STARTS **/
+#services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+
+    background: hsla(29, 92%, 70%, 1);
+
+    background: linear-gradient(90deg, hsla(29, 92%, 70%, 1) 0%, hsla(0, 87%, 73%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(29, 92%, 70%, 1) 0%, hsla(0, 87%, 73%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(29, 92%, 70%, 1) 0%, hsla(0, 87%, 73%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F9B16E", endColorstr="#F68080", GradientType=1);
+}
+
+.services_item {
+    color: #141414;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    height: 280px;
+
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background: hsla(265, 53%, 29%, 1);
+
+    background: linear-gradient(90deg, hsla(265, 53%, 29%, 1) 0%, hsla(24, 93%, 73%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(265, 53%, 29%, 1) 0%, hsla(24, 93%, 73%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(265, 53%, 29%, 1) 0%, hsla(24, 93%, 73%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#432371", endColorstr="#FAAE7B", GradientType=1);
+
+    transition: box-shadow 0.2s;
+
+
+}
+
+.services_item:hover {
+    /* height: 290px; */
+    box-shadow: none;
+    color: black;
+}
+
+.services_item h2 {
+    font-size: 30px;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.services_item p {
+    font-size: 17px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+/** SERVICES ENDS **/
+/** ABOUT SECTION STARTS **/
+#about {
+    background: url(https://bit.ly/3tiVShK) no-repeat center center/cover;
+    padding: 50px 150px 50px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 90vh;
+    color: white;
+
+}
+
+#about h2 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 40px;
+}
+
+#about p {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 18px;
+}
+
+
+/** ABOUT SECTION ENDS **/
+
+
+/** CONTACT SECTION STARTS **/
+#contact {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    background: hsla(40, 94%, 74%, 1);
+
+    background: linear-gradient(90deg, hsla(40, 94%, 74%, 1) 0%, hsla(60, 89%, 72%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(40, 94%, 74%, 1) 0%, hsla(60, 89%, 72%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(40, 94%, 74%, 1) 0%, hsla(60, 89%, 72%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FBD07C", endColorstr="#F7F779", GradientType=1);
+}
+
+#contact h2,
+p {
+    font-family: 'Urbanist', sans-serif;
+
+}
+
+#contact label {
+    font-family: 'Urbanist', sans-serif;
+    margin: 5px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#contact input,
+select,
+textarea {
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    padding: 6px;
+    outline: none;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#contact input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: none;
+    padding: 15px;
+}
+
+#comment {
+    padding: 3px;
+
+}
+
+#contact textarea {
+    line-height: 20px;
+    resize: none;
+    overflow: auto;
+    height: auto;
+    display: block;
+
+}
+
+#contact button {
+    font-size: 17px;
+    margin: 3px;
+    background: hsla(217, 100%, 50%, 1);
+
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1);
+
+    color: black;
+    font-family: 'Urbanist', sans-serif;
+    height: 40px;
+    border: none;
+    border-radius: 22px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: box-shadow 0.05s, height 0.1s;
+}
+
+#contact button:active {
+    box-shadow: none;
+}
+
+#contact button:hover {
+    height: 41px;
+}
+
+/** CONTACT SECTION ENDS **/
+
+/** footer **/
+#footer {
+    color: white;
+    background-color: var(--header-black);
+    margin: 0;
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+    height: 30px;
+    padding: 5px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: yellow;
+}
+
+/** FOOTER ENDS **/
+/** MEDIA QUERIES STARTS **/
+@media (max-width : 1078px) {
+    #navbar ul {
+
+        margin-left: 0px;
+    }
+
+    #navbar ul li a {
+        padding: 20px 12px 20px 12px;
+    }
+
+    #services {
+        flex-direction: column;
+        height: 1200px;
+    }
+
+    .services_item {
+        margin: 20px;
+        height: 350px;
+    }
+
+    #about {
+        padding: 50px 10px 50px 10px;
+        height: 100%;
+    }
+
+    #about p {
+        font-size: 17px;
+    }
+
+    #contact p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 300px) {
+    #navbar ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #navbar ul li {
+        padding: 3px;
+    }
+
+    #navbar ul li a {
+        padding: 5px;
+
+    }
+
+    #services_item {
+        height: 500px;
+    }
+}
+
